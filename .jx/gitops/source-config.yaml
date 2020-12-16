@@ -1,0 +1,12 @@
+apiVersion: gitops.jenkins-x.io/v1alpha1
+kind: SourceConfig
+metadata:
+  creationTimestamp: null
+spec:
+  groups:
+  - owner: kh0ma
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: jenkinx_first_job
+    scheduler: in-repo
