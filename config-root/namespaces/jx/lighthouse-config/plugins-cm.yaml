@@ -6,6 +6,10 @@ data:
       repos:
       - kh0ma/jenkinsx_first_try
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - kh0ma/jenkinx_first_job
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -37,6 +41,22 @@ data:
       - cat
       - dog
       - pony
+      kh0ma/jenkinx_first_job:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
     requiresig: {}
     sigmention: {}
     size:
@@ -49,6 +69,11 @@ data:
     - repos:
       - kh0ma/jenkinsx_first_try
       trusted_org: todo
+    - repos:
+      - kh0ma/jenkinx_first_job
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null

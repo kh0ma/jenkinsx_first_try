@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: kh0ma
+    provider: github
+    repository: jenkinx_first_job
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: kh0ma-jenkinx-first-job
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/kh0ma/jenkinx_first_job.git
+  org: kh0ma
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jenkinx_first_job
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/kh0ma/jenkinx_first_job
