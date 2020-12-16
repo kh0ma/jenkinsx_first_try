@@ -30,16 +30,20 @@ jxRequirements:
     provider: minikube
   environments:
   - key: dev
+    owner: kh0ma
+    repository: jenkinsx_first_try
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: 192.168.49.2.nip.io
     externalDNS: false
     namespaceSubDomain: -tekton-pipelines.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: kh0ma
   repository: bucketrepo
   secretStorage: vault
   vault: {}
